@@ -10,10 +10,10 @@ MEDIA DOS PRODUTOS COM WHERE (FILTRO)
 ![Atividade-C](MediaDosProdutosComWHEREParaFiltrarPorProdutosPereciveisOuNao.PNG)
 
 MEDIA E QUANTIDADE TOTAL EM ESTOQUE
-![Atividade-B](MediaDosProdutosEQuantidadeTotalEmEstoque)
+![Atividade-D](MediaDosProdutosEQuantidadeTotalEmEstoque.PNG)
 
 MEDIA DOS PRODUTOS
-![Atividade-B](mediaDosProdutos.PNG)
+![Atividade-E](mediaDosProdutos.PNG)
 
 SELECIONANDO PRODUTO COM MAIOR PREÇO, E EXIBINDO TODOS OS FILTROS
-![Atividade-B](selecionandoOProdutoComMaior.PNG)
+![Atividade-F](selecionandoOProdutoComMaior.PNG)
