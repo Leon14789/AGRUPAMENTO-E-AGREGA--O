@@ -9,11 +9,13 @@ FILTRANDO PRODUTOS PELA NACIONALIDADE
 MEDIA DOS PRODUTOS COM WHERE (FILTRO)
 ![Atividade-C](MediaDosProdutosComWHEREParaFiltrarPorProdutosPereciveisOuNao.PNG)
 
+MEDIA DOS PRODUTOS
+![Atividade-E](mediaDosProdutos.PNG)
+
 MEDIA E QUANTIDADE TOTAL EM ESTOQUE
 ![Atividade-D](MediaDosProdutosEQuantidadeTotalEmEstoque.PNG)
 
-MEDIA DOS PRODUTOS
-![Atividade-E](mediaDosProdutos.PNG)
+
 
 SELECIONANDO PRODUTO COM MAIOR PREÇO, E EXIBINDO TODOS OS FILTROS
 ![Atividade-F](selecionandoOProdutoComMaior.PNG)
