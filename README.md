@@ -17,3 +17,7 @@ MEDIA DOS PRODUTOS
 
 SELECIONANDO PRODUTO COM MAIOR PREÇO, E EXIBINDO TODOS OS FILTROS
 ![Atividade-F](selecionandoOProdutoComMaior.PNG)
+
+# SQL
+[Link Para Verificar o SQL](https://github.com/Leon14789/AGRUPAMENTO-E-AGREGA--O/blob/master/SQL.txt)
+
