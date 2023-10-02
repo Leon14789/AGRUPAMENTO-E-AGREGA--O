@@ -1,0 +1,65 @@
+
+// Criacao de tabela
+CREATE TABLE Produtos (
+    id_produto INT AUTO_INCREMENT PRIMARY KEY ,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    estoque INT NOT NULL,
+    perecivel BOOLEAN NOT NULL,
+    marca VARCHAR(255),
+    nacionalidade VARCHAR(255)
+);
+
+
+// Inserção de dados
+INSERT INTO Produtos(id_produto, nome, preco, estoque, perecivel, marca, nacionalidade ) 
+VALUES (1, 'Arroz SAO PEDRO', 23, 350, 0, 'SAO PEDRO', 'BRASILEIRO'); 
+
+
+INSERT INTO Produtos(id_produto, nome, preco, estoque, perecivel, marca, nacionalidade ) 
+VALUES (2, 'FEIJÃO', 9, 250, 1, 'ANDORINHA', 'BRASILEIRO'); 
+
+
+INSERT INTO Produtos(id_produto, nome, preco, estoque, perecivel, marca, nacionalidade ) 
+VALUES (3, 'SALMAO', 89, 50, 1, 'JAPAO NOSSO DE CADA DIA', 'JAPONES'); 
+
+
+INSERT INTO Produtos(id_produto, nome, preco, estoque, perecivel, marca, nacionalidade ) 
+VALUES (4, 'MACARRAO', 3, 30, 0, 'KIBOM', 'BRASILEIRO'); 
+
+
+INSERT INTO Produtos(id_produto, nome, preco, estoque, perecivel, marca, nacionalidade ) 
+VALUES (5 ,'SONHO DE VALSA', 23, 350, 0, 'GAROTO', 'BRASILEIRO'); 
+
+
+// Contagem de produtos cadastrados
+SELECT COUNT (id_produto) FROM produtos;
+
+// Media dos produtos
+SELECT AVG(preco) as preco_medio FROM Produtos;
+
+// Media dos produtos com WHERE para filtrar por produtos pereciveis ou nao
+SELECT AVG(preco) as preco_medio FROM Produtos WHERE perecivel = 0;
+SELECT AVG(preco) as preco_medio FROM Produtos WHERE perecivel = 1;
+
+
+// Media dos produtos e quantidade total em estoque
+SELECT AVG(preco) as preco_medio, SUM(estoque) as quantidade_total_estoque
+FROM Produtos;
+
+// Selecionando o produto com maior preco e mostrando seu nome - marca - e qta em estoque
+SELECT nome, marca, estoque
+FROM Produtos
+WHERE preco = (SELECT MAX(preco) FROM Produtos);
+
+// Pegando um produto acima da media
+SELECT *
+FROM Produtos
+WHERE preco > (SELECT AVG(preco) FROM Produtos);
+
+// Filtrando os produtos pela nacionalidade deles
+SELECT nacionalidade, COUNT(*) AS quantidade
+FROM Produtos
+GROUP BY nacionalidade;
+
+
